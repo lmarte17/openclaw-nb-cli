@@ -1,0 +1,21 @@
+{
+  "id": "openclaw-nb-cli",
+  "name": "OpenClaw NetBox CLI",
+  "description": "Wraps the nb-cli tool to expose NetBox DCIM/IPAM operations as agent-callable tools. Supports generic CRUD, device/interface queries, prefix management, and raw HTTP requests against any NetBox instance.",
+  "version": "1.0.0",
+  "kind": "runtime",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "nbcliPath": { "type": "string" },
+      "url":       { "type": "string" },
+      "token":     { "type": "string" },
+      "tokenFile": { "type": "string" },
+      "profile":   { "type": "string" },
+      "timeout":   { "type": "number" },
+      "verifySsl": { "type": "boolean" },
+      "debug":     { "type": "boolean" }
+    }
+  }
+}

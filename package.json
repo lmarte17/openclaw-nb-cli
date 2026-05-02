@@ -1,0 +1,18 @@
+{
+  "name": "@local/openclaw-nb-cli",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "OpenClaw plugin wrapping nb-cli for NetBox DCIM/IPAM access",
+  "license": "UNLICENSED",
+  "peerDependencies": {
+    "openclaw": ">=2026.3.13"
+  },
+  "scripts": {
+    "check": "node --check index.js && node --check lib/config.js && node --check lib/runner.js && node --check lib/tools.js"
+  },
+  "openclaw": {
+    "extensions": [
+      "./index.js"
+    ]
+  }
+}
